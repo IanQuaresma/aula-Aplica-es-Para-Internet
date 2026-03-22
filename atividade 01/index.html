@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastro Arquitetura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-header">
+
+            <figure>
+                <img src="imagem/3-1536x1536.png" alt="Logotipo da Rastro Arquitetura">
+            </figure>
+
+            <h1>Rastro Arquitetura</h1>
+
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <div class="container">
+
+            <section id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Todo espaço conta uma história, e toda grande história deixa um rastro.
+                    Fundado em 2024 por Kleiton Diniz e Amanda Beatriz, o Rastro Arquitetura nasce da crença na arquitetura como expressão, identidade e transformação...
+                </p>
+            </section>
+
+            <section id="estilo">
+                <h2>Estilo</h2>
+                <p>
+                    Nosso estilo é guiado pela intenção. Entre o contemporâneo e o clássico,
+                    cada projeto nasce da identidade de quem o habita.
+                </p>
+            </section>
+
+            <section id="projetos">
+                <h2>Nossos Projetos</h2>
+                <div class="projetos">
+                    <article class="card">
+                        <a href="projeto.html">
+                            <figure>
+                                <img src="imagem/00.capa_resultado-3.jpg" alt="Sala moderna do Apartamento Aurora" width="300">
+                                <figcaption>Apartamento Aurora</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="projetos">
+                    <article class="card">
+                        <a href="projeto.html">
+                            <figure>
+                                <img src="imagem/RENDER.01.effectsResult_resultado-1.jpg" alt="Apartamento primeira vista" width="300">
+                                <figcaption>Apartamento primeira vista</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+                
+                <div class="projetos">
+                    <article class="card">
+                        <a href="projeto.html">
+                            <figure>
+                                <img src="imagem/RENDER.02_FLAT.011_resultado.jpg" alt="Apartamento 011" width="300">
+                                <figcaption>Flat 011</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+                <div class="projetos">
+                    <article class="card">
+                        <a href="projeto.html">
+                            <figure>
+                                <img src="imagem/01_resultado-3.jpg" alt="Apartamento Navegantes" width="300">
+                                <figcaption>Apartamento Navegantes</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="servicos">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Projetos arquitetônicos</li>
+                    <li>Design de interiores</li>
+                    <li>Reformas e retrofit</li>
+                    <li>Projetos comerciais e corporativos</li>
+                </ul>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Email: contato@rastro.com</p>
+                <p>Telefone: (83) 0000-0000</p>
+            </section>
+
+            <section id="trabalhe-conosco" aria-labelledby="titulo-cadastro">
+
+                <header>
+                    <h2 id="titulo-cadastro">Trabalhe Conosco</h2>
+                    <p>Envie suas informações para nosso banco de talentos.</p>
+                </header>
+
+                <form >
+
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="Apenas números" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações Profissionais</legend>
+                        <label for="area">Área de interesse</label>
+                        <select id="area" name="area">
+                            <option value="">Selecione</option>
+                            <option value="atendimento">Atendimento</option>
+                            <option value="administrativo">Administrativo</option>
+                            <option value="ti">Tecnologia</option>
+                            <option value="outros">Outros</option>
+                        </select>
+
+                        <label for="mensagem">Apresentação</label>
+                        <textarea id="mensagem" name="mensagem"  rows="4" placeholder="Fale um pouco sobre você">
+                        </textarea>
+
+                        <label for="curriculo">Enviar currículo (PDF)</label>
+                        <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
+                    </fieldset>
+                    <button type="submit">Enviar cadastro</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rastro Arquitetura. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
